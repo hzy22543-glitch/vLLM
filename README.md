@@ -63,7 +63,7 @@ python3 scripts/plot_results.py
 | [docs](docs/methodology.md) | 指标口径、实验控制、整理记录、提交方法 |
 | `runs/` | 你新运行的结果和服务日志，默认不进入 Git |
 
-GitHub Actions 会自动运行无 GPU 测试、归档校验和文档链接检查；当前只在本机执行过这些检查，远程 CI 需推送后运行。
+GitHub Actions 会自动运行无 GPU 测试、归档校验和文档链接检查。首次上传的远程检查已全部通过，后续状态见 [Actions](https://github.com/hzy22543-glitch/vLLM/actions/workflows/check.yml)。
 
 ## 结论边界
 
