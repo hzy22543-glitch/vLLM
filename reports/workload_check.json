@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-10-26",
+  "note": "Retokenized with the locally available tokenizer; historical immutable model revision was not recorded.",
+  "groups": {
+    "shared": {
+      "requests": 100,
+      "sha256": "66c043faa0862d9b9131ad106b6b79dcf31fe6b427920a5a46790a06d8e144e4",
+      "input_min": 2039,
+      "input_max": 2041,
+      "pairwise_lcp_min": 2029,
+      "pairwise_lcp_max": 2031,
+      "matches_archived_input_lengths": true
+    },
+    "independent": {
+      "requests": 100,
+      "sha256": "1671301999dd8f78f143feb0f8c001f18ce96d714f9eb1a01b65024c2b309a30",
+      "input_min": 2039,
+      "input_max": 2041,
+      "pairwise_lcp_min": 27,
+      "pairwise_lcp_max": 29,
+      "matches_archived_input_lengths": true
+    }
+  }
+}

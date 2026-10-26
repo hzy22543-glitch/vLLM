@@ -1,0 +1,50 @@
+===== OS =====
+Linux w 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+===== GPU =====
+Wed Oct 21 16:46:40 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.71.01              Driver Version: 596.36         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4080 ...    On  |   00000000:01:00.0  On |                  N/A |
+| N/A   53C    P0             26W /  175W |    7789MiB /  12282MiB |     15%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A              26      G   /Xwayland                             N/A      |
++-----------------------------------------------------------------------------------------+
+===== Python =====
+Python 3.12.3
+===== vLLM =====
+Name: vllm
+Version: 0.31.0
+Summary: A high-throughput and memory-efficient inference and serving engine for LLMs
+Home-page: https://github.com/vllm-project/vllm
+Author: vLLM Team
+Author-email: 
+License-Expression: Apache-2.0
+Location: /home/administrator/ai-infra/.venv-vllm/lib/python3.12/site-packages
+Requires: aiohttp, anthropic, apache-tvm-ffi, blake3, cachetools, cbor2, cloudpickle, compressed-tensors, depyf, einops, fastapi, fastsafetensors, filelock, flashinfer-python, huggingface_hub, humming-kernels, ijson, instanttensor, jsonschema, lark, llguidance, lm-format-enforcer, mcp, mistral_common, model-hosting-container-standards, msgspec, ninja, numba, numpy, nvidia-cudnn-frontend, nvidia-cutlass-dsl, nvtx, openai, opencv-python-headless, opentelemetry-api, opentelemetry-exporter-otlp, opentelemetry-sdk, opentelemetry-semantic-conventions-ai, oss-harmony, outlines_core, partial-json-parser, pillow, prometheus-fastapi-instrumentator, prometheus_client, protobuf, psutil, py-cpuinfo, pybase64, pydantic, PyNvVideoCodec, python-json-logger, pyyaml, pyzmq, quack-kernels, regex, requests, safetensors, sentencepiece, setproctitle, setuptools, six, starlette, tiktoken, tilelang, tokenizers, tokenspeed-mla, torch, torchaudio, torchcodec, torchvision, tqdm, transformers, typing_extensions, watchfiles, xgrammar
+Required-by: 
+===== PyTorch =====
+2.13.0+cu132
+13.2
+===== Transformers =====
+Name: transformers
+Version: 5.17.0
+Summary: Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.
+Home-page: https://github.com/huggingface/transformers
+Author: The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)
+Author-email: transformers@huggingface.co
+License: Apache 2.0 License
+Location: /home/administrator/ai-infra/.venv-vllm/lib/python3.12/site-packages
+Requires: huggingface-hub, numpy, packaging, pyyaml, regex, safetensors, tokenizers, tqdm, typer
+Required-by: compressed-tensors, vllm, xgrammar

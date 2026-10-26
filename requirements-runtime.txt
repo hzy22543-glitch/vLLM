@@ -1,0 +1,5 @@
+# Measured runtime. Install in a separate compatible Linux/WSL GPU environment.
+# Analysis and unit tests do not require these packages.
+vllm==0.31.0
+torch==2.13.0
+transformers==5.17.0
