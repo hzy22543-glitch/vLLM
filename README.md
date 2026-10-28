@@ -43,6 +43,8 @@ python3 scripts/plot_results.py
 
 ## 阅读与复现顺序
 
+学习复习从 [完整学习手册](docs/study-guide.md) 开始：18 章涵盖终端基础、推理与缓存、指标计算、三阶段实验解释、排错、无 GPU 练习和 30 道带答案自测题。快速回顾用 [十分钟速查表](docs/study-cheatsheet.md)。
+
 1. [项目总报告](reports/project-report.md)：验收结论、三个实验如何组成完整项目。
 2. [基线报告](reports/baseline.md) → [并发报告](reports/concurrency.md) → [APC 报告](reports/prefix-cache.md)：数据、解释与局限。
 3. [基线/并发操作步骤](docs/baseline-concurrency.md) 与 [APC 操作步骤](docs/reproduction.md)：两个终端如何分工、每条命令的参数和成功标志。
