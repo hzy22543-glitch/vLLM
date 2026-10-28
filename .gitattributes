@@ -3,11 +3,9 @@
 *.sh text eol=lf
 *.md text eol=lf
 *.yml text eol=lf
-# Preserve the bytes covered by archived SHA256 records.
-results/prefix-cache/** -text
-# Raw tool output contains intentional padding; keep it byte-for-byte.
-results/prefix-cache/*/benchmark.log -whitespace
-results/prefix-cache/*/metrics_*.txt -whitespace
-reports/environment.txt -text -whitespace
+# Raw evidence includes tool padding; preserve its original bytes.
+results/** -text -whitespace
 data/*.jsonl -text
+data/*.json -text
+reports/environment.txt -text -whitespace
 *.png binary

@@ -1,0 +1,17 @@
+{
+  "runs": 35,
+  "requests": 7808,
+  "failed": 0,
+  "sections": {
+    "baseline": 6,
+    "concurrency": 9,
+    "prefix-cache": 20
+  },
+  "scope": "finite-batch measurements; no sustained-load or causal root-cause claim",
+  "limitations": [
+    "Concurrency measurement windows are under 15 seconds.",
+    "Concurrency runs span two server sessions; run labels are not chronological.",
+    "GPU telemetry covers runner windows including warmups; no client/engine CPU time series.",
+    "Immutable model/tokenizer revisions were not recorded."
+  ]
+}

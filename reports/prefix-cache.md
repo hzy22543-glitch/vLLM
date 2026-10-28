@@ -58,7 +58,7 @@ cold 表示测量前清空，轮内仍可积累缓存。hot 预填充只发送�
 
 ![TTFT 对照](figures/prefix-cache-ttft.png)
 
-[summary.csv](summary.csv) 包含合并请求的描述性 P50/P95；[runs.csv](runs.csv) 保留逐轮指标和开始时间。500 请求来自 5 轮，不能当作 500 次独立的环境重复。
+[prefix-cache-summary.csv](prefix-cache-summary.csv) 包含合并请求的描述性 P50/P95；[prefix-cache-runs.csv](prefix-cache-runs.csv) 保留逐轮指标和开始时间。500 请求来自 5 轮，不能当作 500 次独立的环境重复。
 
 ## 缓存计数证据
 
@@ -82,7 +82,7 @@ cold 表示测量前清空，轮内仍可积累缓存。hot 预填充只发送�
 
 首请求偏慢的根因没有被这组数据确定。准备阶段的服务预热不保证正式 benchmark 新客户端的所有首次开销都已消失；该解释是可能性，不是完成定位的结论。
 
-TTFT/E2EL 从实际发送请求后开始计；客户端等待并发许可的时间另存 queue_times。request_rate=inf、并发上限 1 会形成客户端队列，因此不能把该 TTFT 当作外部用户从到达到首 token 的完整等待。runs.csv 按逐请求 queue_time+latency 另算到达至完成 P95，而不是直接相加两个 P95。
+TTFT/E2EL 从实际发送请求后开始计；客户端等待并发许可的时间另存 queue_times。request_rate=inf、并发上限 1 会形成客户端队列，因此不能把该 TTFT 当作外部用户从到达到首 token 的完整等待。prefix-cache-runs.csv 按逐请求 queue_time+latency 另算到达至完成 P95，而不是直接相加两个 P95。
 
 ## 验收与限制
 

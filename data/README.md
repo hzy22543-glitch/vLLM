@@ -1,7 +1,14 @@
-# 固定输入
+# 固定合成输入
 
-[shared.jsonl](shared.jsonl) 与 [independent.jsonl](independent.jsonl) 各 100 行，每行包含 prompt、output_tokens=64。内容是程序生成的中文合成输入，不含模型权重或采集的个人对话。
+| 文件 | 用途 | 请求数 | 实际 chat 输入 tokens | 输出 tokens |
+|---|---|---:|---:|---:|
+| baseline.jsonl | 两种到达条件 | 200 | 159–161 | 64 |
+| concurrency.jsonl | 三种并发 | 512 | 159–161 | 64 |
+| shared.jsonl | 共享长前缀 APC 对照 | 100 | 2039–2041 | 64 |
+| independent.jsonl | 独立前缀 APC 对照 | 100 | 2039–2041 | 64 |
 
-两份文件与正式结果第一轮 dataset.jsonl 字节相同。ON/OFF 必须使用同一份输入，不在切换模式时重新生成 UUID。
+每行包含原始用户 prompt 和 output_tokens。服务端只套一次 chat 模板。比较条件必须复用相同文件，不能重新随机生成。
 
-真实模板长度 2039–2041 tokens；公共前缀核验见 [workload_check.json](../reports/workload_check.json)。文件生成逻辑在 [build_workload.py](../scripts/build_workload.py)，格式转换在 [prepare_bench.py](../scripts/prepare_dataset.py)。
+baseline-workload.json 和 concurrency-workload.json 是原始生成记录。其中 shared/independent SHA256 对应转换前的源文件，不是本目录转换后的 benchmark JSONL；后者由 [证据索引](../docs/evidence-sha256.json) 和每轮 manifest 校验。转换前文件保存在本机整理前备份中。
+
+新短负载使用 build_workload.py 的 repeat=3，APC 使用 repeat=50，seed/模板/模型仍应以实际协议和输出记录为准。模型权重不在此目录。

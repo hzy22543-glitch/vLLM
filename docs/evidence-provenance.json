@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "notes": [
+    "Run numbers are labels, not chronological order.",
+    "Archived manifests are unchanged; historical absolute paths are retained.",
+    "Service log associations inferred from UTC intervals, not captured run-level PID linkage."
+  ],
+  "files": {
+    "results/baseline/low_rate_run1/metrics_after.txt": {
+      "source": "runs/baseline/low_rate_run1/metrics_after.txt",
+      "sha256": "96433d932fc090e356784b322e86932c2fffdd4f510ba20ebcd4e7c299ee8bed"
+    },
+    "results/baseline/low_rate_run1/result.json": {
+      "source": "runs/baseline/low_rate_run1/result.json",
+      "sha256": "47de83c46690ac91b49f22b0742d5ec090882d8d33a556f7b815c5b3c372c57b"
+    },
+    "results/baseline/low_rate_run1/manifest.json": {
+      "source": "runs/baseline/low_rate_run1/manifest.json",
+      "sha256": "8e702dff5222be5773997438fd8eb239fd14ed7d897575f871c053182a3fb89e"
+    },
+    "results/baseline/low_rate_run1/dataset.jsonl": {
+      "source": "runs/baseline/low_rate_run1/dataset.jsonl",
+      "sha256": "e6d1d858a0944779e83f78b857b5bb5830156441d15435486f942d03c69a5228"
+    },
+    "results/baseline/low_rate_run1/benchmark.log": {
+      "source": "runs/baseline/low_rate_run1/benchmark.log",
+      "sha256": "9f06d8f5decb625133709b34a44393d938976761dcb67de94f34ca41c75ebdb9"
+    },
+    "results/baseline/low_rate_run1/metrics_before.txt": {
+      "source": "runs/baseline/low_rate_run1/metrics_before.txt",
+      "sha256": "b1fe701b291b48bd945553e74c21ee0b06bdbeef7b5b336fda19bb39840c1329"
+    },
+    "results/baseline/low_rate_run2/metrics_after.txt": {
+      "source": "runs/baseline/low_rate_run2/metrics_after.txt",
+      "sha256": "69d3fb85dd4b23e39efd597b2818e041c5955672d3b0113ec620e9d570b1b5d9"
+    },
+    "results/baseline/low_rate_run2/result.json": {
+      "source": "runs/baseline/low_rate_run2/result.json",
+      "sha256": "1847933ca05293f05122e9942bd8b37cc7f3028a848e76c3c338c7df9314e44c"
+    },
+    "results/baseline/low_rate_run2/manifest.json": {
+      "source": "runs/baseline/low_rate_run2/manifest.json",
+      "sha256": "6931c19e2574f21b2f96bbb624f5f991df70e58e864d720beeb46a44cbcdce01"
+    },
+    "results/baseline/low_rate_run2/dataset.jsonl": {
+      "source": "runs/baseline/low_rate_run2/dataset.jsonl",
+      "sha256": "e6d1d858a0944779e83f78b857b5bb5830156441d15435486f942d03c69a5228"
+    },
+    "results/baseline/low_rate_run2/benchmark.log": {
+      "source": "runs/baseline/low_rate_run2/benchmark.log",
+      "sha256": "4dbcf3dee2dcc46b2d6c725aaa09dba3ba75a358eca77775128a55c53979f495"
+    },
+    "results/baseline/low_rate_run2/metrics_before.txt": {
+      "source": "runs/baseline/low_rate_run2/metrics_before.txt",
+      "sha256": "4c3802b14d82cc9a6fe00a5c377d78e95fa4f59d118d15b9e6b77634549aa109"
+    },
+    "results/baseline/low_rate_run3/metrics_after.txt": {
+      "source": "runs/baseline/low_rate_run3/metrics_after.txt",
+      "sha256": "ca9fb9bc21ab9911509964b968351758fb772a0764d3196d59f57df85c6c4a65"
+    },
+    "results/baseline/low_rate_run3/result.json": {
+      "source": "runs/baseline/low_rate_run3/result.json",
+      "sha256": "3eb84c4eb5d80f2851ba71999af67a4ca53cd6d0578adb9ed9883f8ac634a360"
+    },
+    "results/baseline/low_rate_run3/manifest.json": {
+      "source": "runs/baseline/low_rate_run3/manifest.json",
+      "sha256": "14de417ad530971502c84e51614e590fc4a44b132422605f45811882512c8bd8"
+    },
+    "results/baseline/low_rate_run3/dataset.jsonl": {
+      "source": "runs/baseline/low_rate_run3/dataset.jsonl",
+      "sha256": "e6d1d858a0944779e83f78b857b5bb5830156441d15435486f942d03c69a5228"
+    },
+    "results/baseline/low_rate_run3/benchmark.log": {
+      "source": "runs/baseline/low_rate_run3/benchmark.log",
+      "sha256": "c920e4e9aa129d0b9746e4585d6cc94900c70f0a1546623cabf6d0fe9c0ace7e"
+    },
+    "results/baseline/low_rate_run3/metrics_before.txt": {
+      "source": "runs/baseline/low_rate_run3/metrics_before.txt",
+      "sha256": "e72bd838f22440ddd5de1d44bc5e5faea7c15f7b02cb8cd7e5fef6da759f6ee4"
+    },
+    "results/baseline/serial_run1/metrics_after.txt": {
+      "source": "runs/baseline/serial_run1/metrics_after.txt",
+      "sha256": "3694a648b753a602370673d58a9565a19b17103f1ca7de3730cbccd2abae17c1"
+    },
+    "results/baseline/serial_run1/result.json": {
+      "source": "runs/baseline/serial_run1/result.json",
+      "sha256": "35f4001540099990765f1672ff785b3108bb241be26a553233c6573e6149476d"
+    },
+    "results/baseline/serial_run1/manifest.json": {
+      "source": "runs/baseline/serial_run1/manifest.json",
+      "sha256": "692954ac1ab70c809c7875730c14e78b828c6bbddb4f9b7c462c1bf26ae79594"
+    },
+    "results/baseline/serial_run1/dataset.jsonl": {
+      "source": "runs/baseline/serial_run1/dataset.jsonl",
+      "sha256": "e6d1d858a0944779e83f78b857b5bb5830156441d15435486f942d03c69a5228"
+    },
+    "results/baseline/serial_run1/benchmark.log": {
+      "source": "runs/baseline/serial_run1/benchmark.log",
+      "sha256": "9fbea4203ddfeb3176f0e249a99ce416e26dce7e4797f4d68fdda3dbf4863425"
+    },
+    "results/baseline/serial_run1/metrics_before.txt": {
+      "source": "runs/baseline/serial_run1/metrics_before.txt",
+      "sha256": "063918987c67b5089588ea0ee61331afbfe51eefe2ca87f0f45e225ce0297368"
+    },
+    "results/baseline/serial_run2/metrics_after.txt": {
+      "source": "runs/baseline/serial_run2/metrics_after.txt",
+      "sha256": "fee1e1bb697528def04cef2b661833140f0096de204d492bb4d94c4ea546ce3b"
+    },
+    "results/baseline/serial_run2/result.json": {
+      "source": "runs/baseline/serial_run2/result.json",
+      "sha256": "23eb7a14c088fed6a410a5bee4cf490e60864549bd4ec52b37d01a440c4e5a7c"
+    },
+    "results/baseline/serial_run2/manifest.json": {
+      "source": "runs/baseline/serial_run2/manifest.json",
+      "sha256": "355674ea3b0d73e35986f72c900989b3fcfcdc7e34a3519ff9f145c36ba3f05d"
+    },
+    "results/baseline/serial_run2/dataset.jsonl": {
+      "source": "runs/baseline/serial_run2/dataset.jsonl",
+      "sha256": "e6d1d858a0944779e83f78b857b5bb5830156441d15435486f942d03c69a5228"
+    },
+    "results/baseline/serial_run2/benchmark.log": {
+      "source": "runs/baseline/serial_run2/benchmark.log",
+      "sha256": "808f231fe3780d2b3a6553883695180d10ffbf5391a500caa8d9a2ef5715b90f"
+    },
+    "results/baseline/serial_run2/metrics_before.txt": {
+      "source": "runs/baseline/serial_run2/metrics_before.txt",
+      "sha256": "77e23f61a4b4614bd8c33f4b80e34d982df3587aa3156c218ed64f7d3d9f9563"
+    },
+    "results/baseline/serial_run3/metrics_after.txt": {
+      "source": "runs/baseline/serial_run3/metrics_after.txt",
+      "sha256": "9df2f7301eda609922a18535f2e53d4124af00535c0b853f77ded07ab363cf52"
+    },
+    "results/baseline/serial_run3/result.json": {
+      "source": "runs/baseline/serial_run3/result.json",
+      "sha256": "b6dc7727bbd390246a9d2a60fe0e1c7b4c5c28a1a00483bd4af2783df56f2248"
+    },
+    "results/baseline/serial_run3/manifest.json": {
+      "source": "runs/baseline/serial_run3/manifest.json",
+      "sha256": "300c4cf8395c2241aee8d0ababa2b346df3aaa398784143499626b5560e4a8ec"
+    },
+    "results/baseline/serial_run3/dataset.jsonl": {
+      "source": "runs/baseline/serial_run3/dataset.jsonl",
+      "sha256": "e6d1d858a0944779e83f78b857b5bb5830156441d15435486f942d03c69a5228"
+    },
+    "results/baseline/serial_run3/benchmark.log": {
+      "source": "runs/baseline/serial_run3/benchmark.log",
+      "sha256": "8266b6e94d40c08eb5e9e872a8114021e06869ab3ee69c8d9b5e2eb4381318cb"
+    },
+    "results/baseline/serial_run3/metrics_before.txt": {
+      "source": "runs/baseline/serial_run3/metrics_before.txt",
+      "sha256": "f8b8cb791aca21e429e5688d7bff09f7fb9c5ba98e7d6595deb93442ac3b6e7d"
+    },
+    "data/baseline.jsonl": {
+      "source": "runs/datasets/baseline/benchmark.jsonl",
+      "sha256": "e6d1d858a0944779e83f78b857b5bb5830156441d15435486f942d03c69a5228"
+    },
+    "data/baseline-workload.json": {
+      "source": "runs/datasets/baseline/workload_manifest.json",
+      "sha256": "93e8b125f2b9afda50dd1b757b0d4da48e801f94fbbd642621f7af619d96d2ea"
+    },
+    "results/concurrency/c128_run1/metrics_after.txt": {
+      "source": "runs/concurrency/c0128_run1/metrics_after.txt",
+      "sha256": "9fe51a668fbccfde2273a1a27c6a5f45e79dac8638e306daa751fe2d012dca97"
+    },
+    "results/concurrency/c128_run1/result.json": {
+      "source": "runs/concurrency/c0128_run1/result.json",
+      "sha256": "c0c3b842254341509b0a4ad34db17f0d584ff67dd8e675667815d3b86717c8ab"
+    },
+    "results/concurrency/c128_run1/manifest.json": {
+      "source": "runs/concurrency/c0128_run1/manifest.json",
+      "sha256": "29066e3d2b114996762ed6906ce24ad866d0cb65fb013c99175a778e1e904171"
+    },
+    "results/concurrency/c128_run1/dataset.jsonl": {
+      "source": "runs/concurrency/c0128_run1/dataset.jsonl",
+      "sha256": "baa9fe40c7af25eef563c1fd97440bbd2859c86cf1dc35ae154ab1f7c58317f9"
+    },
+    "results/concurrency/c128_run1/benchmark.log": {
+      "source": "runs/concurrency/c0128_run1/benchmark.log",
+      "sha256": "7a2ec13a8ea6f4004caba8cf3481475ac297551074c1c1d576920d76d5c02d1c"
+    },
+    "results/concurrency/c128_run1/metrics_before.txt": {
+      "source": "runs/concurrency/c0128_run1/metrics_before.txt",
+      "sha256": "8d4565cada643c460ca8514cf733fb3b61cbb252b2514702ad3c6d9fca902972"
+    },
+    "results/concurrency/c128_run1/gpu.csv": {
+      "source": "runs/telemetry/c0128_run1-gpu.csv",
+      "sha256": "177600528da64320b696ec0fad695cc00c3607fcc0fba26bf7b437fbb79f006f"
+    },
+    "results/concurrency/c128_run2/metrics_after.txt": {
+      "source": "runs/concurrency/c0128_run2/metrics_after.txt",
+      "sha256": "ef03a75cf973686a208721c6c67630570d4f1496df70b2426b520823ae308188"
+    },
+    "results/concurrency/c128_run2/result.json": {
+      "source": "runs/concurrency/c0128_run2/result.json",
+      "sha256": "97db455d33a22969e4e04d760119fd09c401fe2a6a42564d546eb4c294b99a29"
+    },
+    "results/concurrency/c128_run2/manifest.json": {
+      "source": "runs/concurrency/c0128_run2/manifest.json",
+      "sha256": "53d187b161becde6c42b7728cb8d72185b60f64cecc640f6d8682c3801054a9b"
+    },
+    "results/concurrency/c128_run2/dataset.jsonl": {
+      "source": "runs/concurrency/c0128_run2/dataset.jsonl",
+      "sha256": "baa9fe40c7af25eef563c1fd97440bbd2859c86cf1dc35ae154ab1f7c58317f9"
+    },
+    "results/concurrency/c128_run2/benchmark.log": {
+      "source": "runs/concurrency/c0128_run2/benchmark.log",
+      "sha256": "3fae1222092e6ab4e352cdabae9cfa6b749d1c23f8df20096ce0511c4e7eb066"
+    },
+    "results/concurrency/c128_run2/metrics_before.txt": {
+      "source": "runs/concurrency/c0128_run2/metrics_before.txt",
+      "sha256": "be7879142a3f898e475f99c41c477bc23aae473784d5362cb23bf8d5365d96ed"
+    },
+    "results/concurrency/c128_run2/gpu.csv": {
+      "source": "runs/telemetry/c0128_run2-gpu.csv",
+      "sha256": "b31898357f7cc178d8727fb8cabe7c1557542ca9dfe45c81905ced3dd138138c"
+    },
+    "results/concurrency/c128_run3/metrics_after.txt": {
+      "source": "runs/concurrency/c0128_run3/metrics_after.txt",
+      "sha256": "e54f4312751faa319d89283e1cd29988283b8667af4b4b59dae5993d9ecce28c"
+    },
+    "results/concurrency/c128_run3/result.json": {
+      "source": "runs/concurrency/c0128_run3/result.json",
+      "sha256": "c241a07ee5b20c6cfca4f9eba936824367c2d4aaeaa6ba82601f9ad1f39ce89e"
+    },
+    "results/concurrency/c128_run3/manifest.json": {
+      "source": "runs/concurrency/c0128_run3/manifest.json",
+      "sha256": "bd17b5df54ef05319667bceac9072dddd42e0ee64c7b4f7db930f085a80ebef9"
+    },
+    "results/concurrency/c128_run3/dataset.jsonl": {
+      "source": "runs/concurrency/c0128_run3/dataset.jsonl",
+      "sha256": "baa9fe40c7af25eef563c1fd97440bbd2859c86cf1dc35ae154ab1f7c58317f9"
+    },
+    "results/concurrency/c128_run3/benchmark.log": {
+      "source": "runs/concurrency/c0128_run3/benchmark.log",
+      "sha256": "58d1c8139006f9043f7557d7bab8e925d282519ab824f7ba73c90349f262d21d"
+    },
+    "results/concurrency/c128_run3/metrics_before.txt": {
+      "source": "runs/concurrency/c0128_run3/metrics_before.txt",
+      "sha256": "d2a4fb81078d1e2c4608a425428a9d0b2f740dc8568c1eda8c1ea6be2ddfc5c2"
+    },
+    "results/concurrency/c128_run3/gpu.csv": {
+      "source": "runs/telemetry/c0128_run3-gpu.csv",
+      "sha256": "45cff89e593587e7eb0f5ed9fd05760eae0531b6dbbbe0e6d985c1ffd333c81d"
+    },
+    "results/concurrency/c032_run1/metrics_after.txt": {
+      "source": "runs/concurrency/c032_run1/metrics_after.txt",
+      "sha256": "2568b8e345f3fe55f9bb61b9320f9656d04ea1d439a96e3ed087bcc416a9329a"
+    },
+    "results/concurrency/c032_run1/result.json": {
+      "source": "runs/concurrency/c032_run1/result.json",
+      "sha256": "38c84796eefcec212328f10081b148458161f86f699c559d2b6daac70e95583b"
+    },
+    "results/concurrency/c032_run1/manifest.json": {
+      "source": "runs/concurrency/c032_run1/manifest.json",
+      "sha256": "cd2ccaa7b460170215126683deca9415f05f19801972140fc4875fc44164eb49"
+    },
+    "results/concurrency/c032_run1/dataset.jsonl": {
+      "source": "runs/concurrency/c032_run1/dataset.jsonl",
+      "sha256": "baa9fe40c7af25eef563c1fd97440bbd2859c86cf1dc35ae154ab1f7c58317f9"
+    },
+    "results/concurrency/c032_run1/benchmark.log": {
+      "source": "runs/concurrency/c032_run1/benchmark.log",
+      "sha256": "5af351e755de90106e6a7dc0f8fe91176436e1c000fe3d784077ab94f9437784"
+    },
+    "results/concurrency/c032_run1/metrics_before.txt": {
+      "source": "runs/concurrency/c032_run1/metrics_before.txt",
+      "sha256": "01b423d3a972dfe29b5845814a1875e16f316badb3cd791c2fdbbd13e2e81887"
+    },
+    "results/concurrency/c032_run1/gpu.csv": {
+      "source": "runs/telemetry/c032_run1-gpu.csv",
+      "sha256": "8832e3396cd9981fa3b650fe53fe99a438bba70a1d9ef13c9d1d880b1bef94f9"
+    },
+    "results/concurrency/c032_run2/metrics_after.txt": {
+      "source": "runs/concurrency/c032_run2/metrics_after.txt",
+      "sha256": "7d2751c67ceaae682c5f67ec9aa973ec47380ae94d7e5657952ba82e992a605c"
+    },
+    "results/concurrency/c032_run2/result.json": {
+      "source": "runs/concurrency/c032_run2/result.json",
+      "sha256": "627c91e15b901db9e46ab7baa3bfdbbd5da89e36f3e62a64538153ccd2694fda"
+    },
+    "results/concurrency/c032_run2/manifest.json": {
+      "source": "runs/concurrency/c032_run2/manifest.json",
+      "sha256": "3f779b0c99826c710ed293d39629bd6ec4d018b9f60876a9f2ded7e1e6c80c4e"
+    },
+    "results/concurrency/c032_run2/dataset.jsonl": {
+      "source": "runs/concurrency/c032_run2/dataset.jsonl",
+      "sha256": "baa9fe40c7af25eef563c1fd97440bbd2859c86cf1dc35ae154ab1f7c58317f9"
+    },
+    "results/concurrency/c032_run2/benchmark.log": {
+      "source": "runs/concurrency/c032_run2/benchmark.log",
+      "sha256": "7a41d1f7f2f9d9f28e943a1b8e3c60ed2462c58738be408073510f4a17092fb5"
+    },
+    "results/concurrency/c032_run2/metrics_before.txt": {
+      "source": "runs/concurrency/c032_run2/metrics_before.txt",
+      "sha256": "5282e262c6a78f67a09a4373ae06f00bf10581d11dbcb21ecbdbeb9fa1c6a1a4"
+    },
+    "results/concurrency/c032_run2/gpu.csv": {
+      "source": "runs/telemetry/c032_run2-gpu.csv",
+      "sha256": "e3127b12adf0254acaca51de0fe178110c8e904b68d92b5418625907c53dd71d"
+    },
+    "results/concurrency/c032_run3/metrics_after.txt": {
+      "source": "runs/concurrency/c032_run3/metrics_after.txt",
+      "sha256": "ff50851bfaf46aa247c68cb54aeeafed3bab9b0a17aacaf76d8244795ce37a99"
+    },
+    "results/concurrency/c032_run3/result.json": {
+      "source": "runs/concurrency/c032_run3/result.json",
+      "sha256": "ab038a36acf8fa39434058ef7015f279e3768c2122dc9e345fb6df926d46b3b4"
+    },
+    "results/concurrency/c032_run3/manifest.json": {
+      "source": "runs/concurrency/c032_run3/manifest.json",
+      "sha256": "c690ca91e399418cb08ddf2045186f3891352fb35de1867033e758abeca5ffd7"
+    },
+    "results/concurrency/c032_run3/dataset.jsonl": {
+      "source": "runs/concurrency/c032_run3/dataset.jsonl",
+      "sha256": "baa9fe40c7af25eef563c1fd97440bbd2859c86cf1dc35ae154ab1f7c58317f9"
+    },
+    "results/concurrency/c032_run3/benchmark.log": {
+      "source": "runs/concurrency/c032_run3/benchmark.log",
+      "sha256": "6d744d3432d0730e192ccb4c33c03ae66d69a77495afb224d08f31f43ecd8a17"
+    },
+    "results/concurrency/c032_run3/metrics_before.txt": {
+      "source": "runs/concurrency/c032_run3/metrics_before.txt",
+      "sha256": "4bc7f966beb3c6584a4675280244a309fdf935a5908c45af5d52a21ac5f060cb"
+    },
+    "results/concurrency/c032_run3/gpu.csv": {
+      "source": "runs/telemetry/c032_run3-gpu.csv",
+      "sha256": "39043b8f4151d2edcd3c61898a0c243deb606ec989397e174762d69ba35f4694"
+    },
+    "results/concurrency/c064_run1/metrics_after.txt": {
+      "source": "runs/concurrency/c064_run1/metrics_after.txt",
+      "sha256": "dd38de6a864fdf92492b649e7656cabde6718dd36ddead7f6b9e58ba80f20a66"
+    },
+    "results/concurrency/c064_run1/result.json": {
+      "source": "runs/concurrency/c064_run1/result.json",
+      "sha256": "991f5c051b372ffc1c528a6167f707d75a79bc965eab724f7a9bfc6384526f5c"
+    },
+    "results/concurrency/c064_run1/manifest.json": {
+      "source": "runs/concurrency/c064_run1/manifest.json",
+      "sha256": "b2d8fb38306058fc5a3c5d48bbbf73603d7c65f1a01350f9539d9c02e7d4ce48"
+    },
+    "results/concurrency/c064_run1/dataset.jsonl": {
+      "source": "runs/concurrency/c064_run1/dataset.jsonl",
+      "sha256": "baa9fe40c7af25eef563c1fd97440bbd2859c86cf1dc35ae154ab1f7c58317f9"
+    },
+    "results/concurrency/c064_run1/benchmark.log": {
+      "source": "runs/concurrency/c064_run1/benchmark.log",
+      "sha256": "63ffa4fd0d50d493d4a0dc98c4bfec3757b4e0811bd4cccc13b5edd6ca6c056e"
+    },
+    "results/concurrency/c064_run1/metrics_before.txt": {
+      "source": "runs/concurrency/c064_run1/metrics_before.txt",
+      "sha256": "254a484e7d0fa9a15f77b2d882bee63e25c6df82eb466313476019e50cacdfad"
+    },
+    "results/concurrency/c064_run1/gpu.csv": {
+      "source": "runs/telemetry/c064_run1-gpu.csv",
+      "sha256": "2f77a016fa62e9436d6b8d5477f5fc87ebe83d7d9202791b6f4e5e828a53dfeb"
+    },
+    "results/concurrency/c064_run2/metrics_after.txt": {
+      "source": "runs/concurrency/c064_run2/metrics_after.txt",
+      "sha256": "4ac2c9385e50bc363400811d369f45dd751b49e7848e5cd5f1c39b65ed4a87ab"
+    },
+    "results/concurrency/c064_run2/result.json": {
+      "source": "runs/concurrency/c064_run2/result.json",
+      "sha256": "f180c67b418100a1eb460581cf5621f8365c59073f938930ca661b3f2c9f38e7"
+    },
+    "results/concurrency/c064_run2/manifest.json": {
+      "source": "runs/concurrency/c064_run2/manifest.json",
+      "sha256": "8012ed7f783cc989ef965b24c9e5b511045c29907ff6d61447ed87824df67cbc"
+    },
+    "results/concurrency/c064_run2/dataset.jsonl": {
+      "source": "runs/concurrency/c064_run2/dataset.jsonl",
+      "sha256": "baa9fe40c7af25eef563c1fd97440bbd2859c86cf1dc35ae154ab1f7c58317f9"
+    },
+    "results/concurrency/c064_run2/benchmark.log": {
+      "source": "runs/concurrency/c064_run2/benchmark.log",
+      "sha256": "2b7ce538126acb36c4d52cbeaa00c13e8150bf60519b7c6bc97e601de7bd93c3"
+    },
+    "results/concurrency/c064_run2/metrics_before.txt": {
+      "source": "runs/concurrency/c064_run2/metrics_before.txt",
+      "sha256": "2b545c96943f9b122f71492ad8bbf772d94f921dd09f64d19439520bf78cbbd1"
+    },
+    "results/concurrency/c064_run2/gpu.csv": {
+      "source": "runs/telemetry/c064_run2-gpu.csv",
+      "sha256": "e3cacf1e61c778fb43f9aed296af7223226243f68af197809ec84c3901d7a4df"
+    },
+    "results/concurrency/c064_run3/metrics_after.txt": {
+      "source": "runs/concurrency/c064_run3/metrics_after.txt",
+      "sha256": "ff67265594aa4ef4ed34eb85893a995a0f5d7f55564e6cf30cf1406fe0349cd6"
+    },
+    "results/concurrency/c064_run3/result.json": {
+      "source": "runs/concurrency/c064_run3/result.json",
+      "sha256": "c0b07577395768cbc6c6f123e05202df766024a1cdbbc4b31d6c7227eeb6bc07"
+    },
+    "results/concurrency/c064_run3/manifest.json": {
+      "source": "runs/concurrency/c064_run3/manifest.json",
+      "sha256": "7586cd25a9d4bacc402e71a9e3e9f97e41f7fe6f9dad8a95df1a1cacae6c3afc"
+    },
+    "results/concurrency/c064_run3/dataset.jsonl": {
+      "source": "runs/concurrency/c064_run3/dataset.jsonl",
+      "sha256": "baa9fe40c7af25eef563c1fd97440bbd2859c86cf1dc35ae154ab1f7c58317f9"
+    },
+    "results/concurrency/c064_run3/benchmark.log": {
+      "source": "runs/concurrency/c064_run3/benchmark.log",
+      "sha256": "64bfe7de66a7c0cf6bf6ab0be3db7ebba3f84ce771939b1b65d17ab39bbf75eb"
+    },
+    "results/concurrency/c064_run3/metrics_before.txt": {
+      "source": "runs/concurrency/c064_run3/metrics_before.txt",
+      "sha256": "4ebc57fee3d078d3d65658d0aa032c5a5d613317c860c1378eb1d74767118b78"
+    },
+    "results/concurrency/c064_run3/gpu.csv": {
+      "source": "runs/telemetry/c064_run3-gpu.csv",
+      "sha256": "65a4e6e23af2a162881bacf2d97517f8003e8c6be0ceb5516c03bb2bf92076be"
+    },
+    "data/concurrency.jsonl": {
+      "source": "runs/datasets/concurrency/benchmark.jsonl",
+      "sha256": "baa9fe40c7af25eef563c1fd97440bbd2859c86cf1dc35ae154ab1f7c58317f9"
+    },
+    "data/concurrency-workload.json": {
+      "source": "runs/datasets/concurrency/workload_manifest.json",
+      "sha256": "362d954c34a499a85ac48cd47ec5e0b7fe81552447f9f353b544c69d35a7baec"
+    },
+    "results/sessions/service-20261027T180357Z.log": {
+      "source": "runs/service-logs/off-20261027T180357116916016.log",
+      "sha256": "0d323e41e30af03bff505e992fb3775f32ace88be8cb9b41e9d9368bcad8f2dd"
+    },
+    "results/sessions/service-20261028T050813Z.log": {
+      "source": "runs/service-logs/off-20261028T050813310827331.log",
+      "sha256": "e02e49a389d4e90f33a357a4e2ef8d506d307b7fde1251d36e30c4e162946413"
+    }
+  }
+}

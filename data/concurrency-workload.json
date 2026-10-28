@@ -1,0 +1,22 @@
+{
+  "model": "/mnt/d/models/Qwen2.5-1.5B-Instruct",
+  "requests": 512,
+  "output_tokens": 64,
+  "token_scope": "one server-side user chat template",
+  "groups": {
+    "shared": {
+      "sha256": "97221cf0428284a0806183d25cad091d7f47977aee343346418c28dc2d880563",
+      "input_min": 159,
+      "input_max": 161,
+      "pairwise_lcp_min": 149,
+      "pairwise_lcp_max": 151
+    },
+    "independent": {
+      "sha256": "60ffd86293ecc65e12f8c2dd881b6e36ac5c14c1834d8648d582e9cf05ed576f",
+      "input_min": 159,
+      "input_max": 161,
+      "pairwise_lcp_min": 27,
+      "pairwise_lcp_max": 29
+    }
+  }
+}

@@ -1,0 +1,10 @@
+run,gpu_window,gpu_samples,gpu_max_gap_s,utilization_max,utilization_min,utilization_available_samples,memory_max,memory_min,memory_available_samples,power_max,power_min,power_available_samples,temperature_max,temperature_min,temperature_available_samples,clock_max,clock_min,clock_available_samples
+c064_run3,runner_including_warmup,21,1.017,97.0,1.0,21,11812.0,11784.0,21,136.59,24.57,21,57.0,36.0,21,2550.0,300.0,21
+c032_run3,runner_including_warmup,25,3.939,100.0,1.0,25,11778.0,11717.0,25,126.78,24.72,25,53.0,37.0,25,2550.0,300.0,25
+c128_run3,runner_including_warmup,19,3.942,98.0,0.0,19,11806.0,11719.0,19,142.74,24.04,19,57.0,38.0,19,2550.0,300.0,19
+c032_run1,runner_including_warmup,27,3.941,97.0,1.0,27,11812.0,11739.0,27,128.12,24.78,27,56.0,36.0,27,2550.0,300.0,27
+c064_run1,runner_including_warmup,20,1.026,97.0,1.0,20,11766.0,11733.0,20,139.2,24.16,20,55.0,36.0,20,2550.0,300.0,20
+c128_run1,runner_including_warmup,20,1.058,97.0,1.0,20,11794.0,11753.0,20,150.46,24.32,20,56.0,36.0,20,2550.0,300.0,20
+c128_run2,runner_including_warmup,18,3.931,98.0,1.0,18,11778.0,11762.0,18,151.58,24.16,18,57.0,36.0,18,2550.0,300.0,18
+c064_run2,runner_including_warmup,20,3.958,97.0,1.0,20,11818.0,11775.0,20,138.72,24.43,20,55.0,36.0,20,2550.0,300.0,20
+c032_run2,runner_including_warmup,24,3.913,97.0,0.0,24,11835.0,11788.0,24,129.64,24.74,24,57.0,37.0,24,2550.0,300.0,24

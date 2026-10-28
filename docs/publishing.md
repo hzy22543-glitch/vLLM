@@ -8,7 +8,7 @@
 
 ```bash
 python3 -m unittest discover -s tests -v
-python3 scripts/audit_results.py
+python3 scripts/analyze_project.py
 python3 scripts/check_repository.py
 git diff --check
 git status --short

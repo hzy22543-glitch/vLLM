@@ -12,7 +12,7 @@ from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT / "scripts"), str(ROOT / "scripts")]
-from audit_results import percentile, validate, read_run, inspect_batch, summarize, counter
+from audit_prefix_cache import percentile, validate, read_run, inspect_batch, summarize, counter
 from build_workload import common_prefix_len, get_token_ids
 from prepare_dataset import convert_dataset
 from run_benchmark import command, reset_cache, warmup_prompt, request_json

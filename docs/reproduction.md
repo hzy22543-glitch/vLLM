@@ -183,8 +183,8 @@ python scripts/run_benchmark.py --model /mnt/d/models/Qwen2.5-1.5B-Instruct --da
 四组都成功后，在 B 分析小测试：
 
 ```bash
-python scripts/audit_results.py --results-dir runs/smoke --output-dir runs/smoke-report --runs 1 --requests 6
-python scripts/plot_results.py --summary runs/smoke-report/summary.csv --output-dir runs/smoke-report/figures
+python scripts/audit_prefix_cache.py --results-dir runs/smoke --output-dir runs/smoke-report --runs 1 --requests 6
+python scripts/plot_results.py --summary runs/smoke-report/prefix-cache-summary.csv --output-dir runs/smoke-report/figures
 ```
 
 --results-dir 指原始结果位置，--output-dir 指汇总写到哪里。--runs 1 --requests 6 告诉校验器这是小批次。汇总与原始结果分开放，避免把报告文件夹当成一次实验。
@@ -230,8 +230,8 @@ python scripts/run_benchmark.py --model /mnt/d/models/Qwen2.5-1.5B-Instruct --da
 最后应有 20 个成功目录、2000 个正式请求，所有输出为 64。预热请求不计入这 2000 条。汇总新结果：
 
 ```bash
-python scripts/audit_results.py --results-dir runs/next --output-dir runs/next-report
-python scripts/plot_results.py --summary runs/next-report/summary.csv --output-dir runs/next-report/figures
+python scripts/audit_prefix_cache.py --results-dir runs/next --output-dir runs/next-report
+python scripts/plot_results.py --summary runs/next-report/prefix-cache-summary.csv --output-dir runs/next-report/figures
 ```
 
 默认严格要求 5 轮 × 100 请求，不足会报错。查看新报告，而不是覆盖仓库的正式 reports；确认协议和结论后再作为一个新版本发布。

@@ -185,7 +185,7 @@ def write_csv(path, rows):
 
 def export(records, out):
     summaries = [summarize(records, g) for g in GROUPS]
-    write_csv(out / "summary.csv", summaries)
+    write_csv(out / "prefix-cache-summary.csv", summaries)
     rows = []
     for record in records:
         d, m = record["result"], record["manifest"]
@@ -197,7 +197,7 @@ def export(records, out):
         for k in ("queries_delta", "hits_delta", "cache_window_matches", "cache_hit_ratio"):
             row[k] = record[k]
         rows.append(row)
-    write_csv(out / "runs.csv", rows)
+    write_csv(out / "prefix-cache-runs.csv", rows)
     lines = ["# 正式实验自动复算", "", f"验证通过：{len(records)} 轮，{sum(r['result']['completed'] for r in records)} 条成功请求，0 失败。", "",
              "| 条件 | 轮数 | 请求数 | TTFT 均值 ± 轮间 SD (ms) | TPOT (ms) | 输出 tokens/s |",
              "|---|---:|---:|---:|---:|---:|"]
@@ -208,8 +208,8 @@ def export(records, out):
         lines += ["", f"{prefix} TTFT 降低率：(OFF−ON)/OFF = {(off['mean_all']-on['mean_all'])/off['mean_all']*100:.3f}%。"]
     lines += ["", "全部正式请求都保留。误差为轮均值的样本标准差，不是置信区间；吞吐按总输出 tokens / 总测量时间计算。",
               "命中率仅在 ON 且计数增量与测量输入总数相符时计算；OFF 的零分母不解释为 0% 命中。",
-              "详细逐轮值、输入 SHA256、计数增量及客户端排队后的延迟见 runs.csv。"]
-    (out / "computed.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+              "详细逐轮值、输入 SHA256、计数增量及客户端排队后的延迟见 prefix-cache-runs.csv。"]
+    (out / "prefix-cache-computed.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return summaries
 
 
@@ -226,7 +226,7 @@ def main():
     summaries = export(records, args.output_dir)
     for s in summaries:
         print(f"{s['group']}: {s['runs']} runs, {s['requests']} requests, TTFT={s['mean_all']:.3f} ms")
-    print(f"PASS: {len(records)} runs validated. Report: {args.output_dir / 'computed.md'}")
+    print(f"PASS: {len(records)} runs validated. Report: {args.output_dir / 'prefix-cache-computed.md'}")
 
 
 if __name__ == "__main__":
